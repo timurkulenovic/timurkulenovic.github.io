@@ -3,15 +3,33 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://timurkulenovic.github.io/categories/</loc>
+    <loc>http://timurkulenovic.github.io/posts/my-first-post/</loc>
+    <lastmod>2020-08-17T13:16:45+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://timurkulenovic.github.io/posts/</loc>
+    <lastmod>2020-08-17T13:16:45+02:00</lastmod>
   </url>
   
   <url>
     <loc>http://timurkulenovic.github.io/tags/</loc>
+    <lastmod>2020-08-17T13:16:45+02:00</lastmod>
   </url>
   
   <url>
     <loc>http://timurkulenovic.github.io/</loc>
+    <lastmod>2020-08-17T13:16:45+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://timurkulenovic.github.io/tags/untagged/</loc>
+    <lastmod>2020-08-17T13:16:45+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://timurkulenovic.github.io/about/</loc>
+    <lastmod>2020-08-17T13:05:57+02:00</lastmod>
   </url>
   
 </urlset>
