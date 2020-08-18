@@ -1,0 +1,35 @@
+
+; <<>> DiG 9.11.3-1ubuntu1.12-Ubuntu <<>> timurkulenovic.net +noall +answer 3600 IN A 185.199.108.153
+;; global options: +cmd
+timurkulenovic.net.	1180	IN	A	157.230.97.39
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: SERVFAIL, id: 2529
+;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 65494
+;; QUESTION SECTION:
+;3600.				IN	A
+
+;; Query time: 0 msec
+;; SERVER: 127.0.0.53#53(127.0.0.53)
+;; WHEN: Mon Aug 17 14:21:04 CEST 2020
+;; MSG SIZE  rcvd: 33
+
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 140
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 65494
+;; QUESTION SECTION:
+;185.199.108.153.		IN	A
+
+;; ANSWER SECTION:
+185.199.108.153.	0	IN	A	185.199.108.153
+
+;; Query time: 3 msec
+;; SERVER: 127.0.0.53#53(127.0.0.53)
+;; WHEN: Mon Aug 17 14:21:04 CEST 2020
+;; MSG SIZE  rcvd: 60
+
