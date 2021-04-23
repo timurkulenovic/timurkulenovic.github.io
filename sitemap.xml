@@ -3,33 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://timurkulenovic.net/posts/</loc>
-    <lastmod>2021-04-23T16:05:54+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://timurkulenovic.net/posts/statistics-joke/</loc>
-    <lastmod>2021-04-23T16:05:54+02:00</lastmod>
+    <loc>https://timurkulenovic.net/about/</loc>
+    <lastmod>2020-08-17T13:05:57+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://timurkulenovic.net/tags/</loc>
-    <lastmod>2021-04-23T16:05:54+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://timurkulenovic.net/</loc>
-    <lastmod>2021-04-23T16:05:54+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://timurkulenovic.net/tags/untagged/</loc>
-    <lastmod>2021-04-23T16:05:54+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://timurkulenovic.net/about/</loc>
-    <lastmod>2020-08-17T13:05:57+02:00</lastmod>
   </url>
   
 </urlset>
