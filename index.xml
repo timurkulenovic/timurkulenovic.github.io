@@ -6,7 +6,19 @@
     <description>Recent content on Timur Kulenović</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><atom:link href="https://timurkulenovic.net/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Fri, 23 Apr 2021 17:33:19 +0200</lastBuildDate><atom:link href="https://timurkulenovic.net/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Statistics joke</title>
+      <link>https://timurkulenovic.net/posts/joke-post/</link>
+      <pubDate>Fri, 23 Apr 2021 17:33:19 +0200</pubDate>
+      
+      <guid>https://timurkulenovic.net/posts/joke-post/</guid>
+      <description>A: I used to think correlation implied causation. Then I took a statistics class. Now I don&amp;rsquo;t.
+B: Sounds like the class helped.
+A: Well, maybe.</description>
+    </item>
+    
     <item>
       <title>About</title>
       <link>https://timurkulenovic.net/about/</link>
