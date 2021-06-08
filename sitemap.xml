@@ -1,35 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
-    <loc>https://timurkulenovic.net/posts/</loc>
+    <loc>https://kulenovic.si/posts/</loc>
     <lastmod>2021-04-23T17:33:19+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://timurkulenovic.net/posts/joke-post/</loc>
+  </url><url>
+    <loc>https://kulenovic.si/posts/joke-post/</loc>
     <lastmod>2021-04-23T17:33:19+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://timurkulenovic.net/tags/</loc>
+  </url><url>
+    <loc>https://kulenovic.si/tags/</loc>
     <lastmod>2021-04-23T17:33:19+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://timurkulenovic.net/</loc>
+  </url><url>
+    <loc>https://kulenovic.si/</loc>
     <lastmod>2021-04-23T17:33:19+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://timurkulenovic.net/tags/untagged/</loc>
+  </url><url>
+    <loc>https://kulenovic.si/tags/untagged/</loc>
     <lastmod>2021-04-23T17:33:19+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://timurkulenovic.net/about/</loc>
+  </url><url>
+    <loc>https://kulenovic.si/about/</loc>
     <lastmod>2020-08-17T13:05:57+02:00</lastmod>
   </url>
-  
 </urlset>

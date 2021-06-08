@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Timur Kulenović</title>
-    <link>https://timurkulenovic.net/tags/</link>
+    <link>https://kulenovic.si/tags/</link>
     <description>Recent content in Tags on Timur Kulenović</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Fri, 23 Apr 2021 17:33:19 +0200</lastBuildDate><atom:link href="https://timurkulenovic.net/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 23 Apr 2021 17:33:19 +0200</lastBuildDate><atom:link href="https://kulenovic.si/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>untagged</title>
-      <link>https://timurkulenovic.net/tags/untagged/</link>
+      <link>https://kulenovic.si/tags/untagged/</link>
       <pubDate>Fri, 23 Apr 2021 17:33:19 +0200</pubDate>
       
-      <guid>https://timurkulenovic.net/tags/untagged/</guid>
+      <guid>https://kulenovic.si/tags/untagged/</guid>
       <description></description>
     </item>
     

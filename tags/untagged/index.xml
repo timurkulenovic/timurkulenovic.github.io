@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>untagged on Timur Kulenović</title>
-    <link>https://timurkulenovic.net/tags/untagged/</link>
+    <link>https://kulenovic.si/tags/untagged/</link>
     <description>Recent content in untagged on Timur Kulenović</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Fri, 23 Apr 2021 17:33:19 +0200</lastBuildDate><atom:link href="https://timurkulenovic.net/tags/untagged/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 23 Apr 2021 17:33:19 +0200</lastBuildDate><atom:link href="https://kulenovic.si/tags/untagged/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Statistics joke</title>
-      <link>https://timurkulenovic.net/posts/joke-post/</link>
+      <link>https://kulenovic.si/posts/joke-post/</link>
       <pubDate>Fri, 23 Apr 2021 17:33:19 +0200</pubDate>
       
-      <guid>https://timurkulenovic.net/posts/joke-post/</guid>
+      <guid>https://kulenovic.si/posts/joke-post/</guid>
       <description>A: I used to think correlation implied causation. Then I took a statistics class. Now I don&amp;rsquo;t.
 B: Sounds like the class helped.
 A: Well, maybe.</description>
