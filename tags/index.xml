@@ -9,11 +9,20 @@
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
     <lastBuildDate>Mon, 17 Oct 2022 17:33:19 +0200</lastBuildDate><atom:link href="https://kulenovic.si/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>untagged</title>
-      <link>https://kulenovic.si/tags/untagged/</link>
+      <title>basketball</title>
+      <link>https://kulenovic.si/tags/basketball/</link>
       <pubDate>Mon, 17 Oct 2022 17:33:19 +0200</pubDate>
       
-      <guid>https://kulenovic.si/tags/untagged/</guid>
+      <guid>https://kulenovic.si/tags/basketball/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>data science</title>
+      <link>https://kulenovic.si/tags/data-science/</link>
+      <pubDate>Mon, 17 Oct 2022 17:33:19 +0200</pubDate>
+      
+      <guid>https://kulenovic.si/tags/data-science/</guid>
       <description></description>
     </item>
     
