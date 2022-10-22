@@ -343,7 +343,7 @@ The loss function minimizes the average difference between winning ratio and Pyt
 </div>
 
 <p>The best fits for each of four seasons are pretty similar, $x \approx 11$. It could be that the $L(x)$ has multiple local minima and <code>fmin_l_bfgs_b</code> might not have returned the global minimum. We can verify that these $x$ values are indeed the best fit with respect to $L(x)$ using brute force by simply evaluating function from on range [0, 30] with step of 0.05.</p>
-<p><img src="/pythagorean-exp-intro_files/errors.png" alt="png"></p>
+<p><a href="/pythagorean-exp-intro_files/errors.png"><img src="/pythagorean-exp-intro_files/errors.png" alt="png"></a></p>
 <p>These seem to be convex functions, so there should not be any problems getting the smallest error using any of two methods. Quick glance at Loss vs. x plots suffices to confirm that $x \approx 11$ seems to be a good fit for this data, however we also can also show values obtained using this method:</p>
 
 
@@ -408,7 +408,7 @@ The loss function minimizes the average difference between winning ratio and Pyt
   </a>
 </h3>
 <p>Finally, we use the obtained values for $x$ to fix the Pythagorean expectation to get the best fit to given data. Note that green line in this case, does not represent the line obtained linear regression, it is simply just $y = x$ line.</p>
-<p><img src="/pythagorean-exp-intro_files/pyth_fitted.png" alt="png"></p>
+<p><a href="/pythagorean-exp-intro_files/pyth_fitted.png"><img src="/pythagorean-exp-intro_files/pyth_fitted.png" alt="png"></a></p>
 <p>Again, we confirm strong linear correlation between Pythagorean expectation and winning ratio:</p>
 
 
