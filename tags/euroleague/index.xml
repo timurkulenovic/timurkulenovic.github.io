@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Timur Kulenović</title>
-    <link>https://kulenovic.si/</link>
-    <description>Recent content on Timur Kulenović</description>
+    <title>Euroleague on Timur Kulenović</title>
+    <link>https://kulenovic.si/tags/euroleague/</link>
+    <description>Recent content in Euroleague on Timur Kulenović</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Mon, 17 Oct 2022 17:33:19 +0200</lastBuildDate><atom:link href="https://kulenovic.si/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 17 Oct 2022 17:33:19 +0200</lastBuildDate><atom:link href="https://kulenovic.si/tags/euroleague/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Euroleague Pythagorean Expectation</title>
       <link>https://kulenovic.si/posts/pythagorean/</link>
@@ -15,16 +15,6 @@
       
       <guid>https://kulenovic.si/posts/pythagorean/</guid>
       <description>What is Pythagorean expectation? Link to heading Pythagorean expectation is a formula that was originally derived by Bill James to be used in baseball. The objective of the formula was to estimate how many wins a team should have won based on the number of runs scored and runs allowed. You can read more about the theorem on Wikipedia and this article that also presents few practical examples. Originally the form of the formula looks like this: $$W \approx \frac{(\text{runs scored}) ^ 2}{(\text{runs scored}) ^ 2 + (\text{runs allowed}) ^ 2}\text{,}$$ where $W$ is the ratio of team&amp;rsquo;s wins or win percentage.</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>https://kulenovic.si/about/</link>
-      <pubDate>Mon, 17 Aug 2020 13:05:57 +0200</pubDate>
-      
-      <guid>https://kulenovic.si/about/</guid>
-      <description>I am interested in:
-Computer Science Data Science Sports </description>
     </item>
     
   </channel>

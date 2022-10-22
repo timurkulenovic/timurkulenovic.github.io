@@ -12,15 +12,15 @@
 
 
 <meta name="author" content="Timur Kulenović">
-<meta name="description" content="Here comes a basketball post.">
+<meta name="description" content="What is Pythagorean expectation? Link to heading Pythagorean expectation is a formula that was originally derived by Bill James to be used in baseball. The objective of the formula was to estimate how many wins a team should have won based on the number of runs scored and runs allowed. You can read more about the theorem on Wikipedia and this article that also presents few practical examples. Originally the form of the formula looks like this: $$W \approx \frac{(\text{runs scored}) ^ 2}{(\text{runs scored}) ^ 2 &#43; (\text{runs allowed}) ^ 2}\text{,}$$ where $W$ is the ratio of team&rsquo;s wins or win percentage.">
 <meta name="keywords" content="">
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Euroleague Pythagorean Expectation"/>
-<meta name="twitter:description" content="Here comes a basketball post."/>
+<meta name="twitter:description" content="What is Pythagorean expectation? Link to heading Pythagorean expectation is a formula that was originally derived by Bill James to be used in baseball. The objective of the formula was to estimate how many wins a team should have won based on the number of runs scored and runs allowed. You can read more about the theorem on Wikipedia and this article that also presents few practical examples. Originally the form of the formula looks like this: $$W \approx \frac{(\text{runs scored}) ^ 2}{(\text{runs scored}) ^ 2 &#43; (\text{runs allowed}) ^ 2}\text{,}$$ where $W$ is the ratio of team&rsquo;s wins or win percentage."/>
 
 <meta property="og:title" content="Euroleague Pythagorean Expectation" />
-<meta property="og:description" content="Here comes a basketball post." />
+<meta property="og:description" content="What is Pythagorean expectation? Link to heading Pythagorean expectation is a formula that was originally derived by Bill James to be used in baseball. The objective of the formula was to estimate how many wins a team should have won based on the number of runs scored and runs allowed. You can read more about the theorem on Wikipedia and this article that also presents few practical examples. Originally the form of the formula looks like this: $$W \approx \frac{(\text{runs scored}) ^ 2}{(\text{runs scored}) ^ 2 &#43; (\text{runs allowed}) ^ 2}\text{,}$$ where $W$ is the ratio of team&rsquo;s wins or win percentage." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://kulenovic.si/posts/pythagorean/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-10-17T17:33:19+02:00" />
@@ -31,6 +31,30 @@
 
 
 <link rel="canonical" href="https://kulenovic.si/posts/pythagorean/">
+
+
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.3/dist/katex.min.css" integrity="sha384-Juol1FqnotbkyZUT5Z7gUPjQ9gzlwCENvUZTpQBAPxtusdwFLRy382PSDx5UUJ4/" crossorigin="anonymous">
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.3/dist/katex.min.js" integrity="sha384-97gW6UIJxnlKemYavrqDHSX3SiygeOwIZhwyOKRfSaf0JWKRVj9hLASHgFTzT+0O" crossorigin="anonymous"></script>
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.3/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+            delimiters: [
+                {left: "$$", right: "$$", display: true},
+                {left: "$", right: "$", display: true}
+            ]
+        });
+    });
+</script>
+
 
 
 <link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
@@ -144,7 +168,7 @@
             </span>
             <span class="reading-time">
               <i class="fa fa-clock-o" aria-hidden="true"></i>
-              One-minute read
+              4-minute read
             </span>
           </div>
           
@@ -157,6 +181,14 @@
       <span class="separator">•</span>
     <span class="tag">
       <a href="/tags/data-science/">data science</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/euroleague/">Euroleague</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/pythagorean-expectation/">pythagorean expectation</a>
     </span></div>
 
         </div>
@@ -164,7 +196,277 @@
 
       <div>
         
-        <p>Here comes a basketball post.</p>
+        <h2 id="what-is-pythagorean-expectation">
+  What is Pythagorean expectation?
+  <a class="heading-link" href="#what-is-pythagorean-expectation">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Pythagorean expectation is a formula that was originally derived by Bill James to be used in baseball. The objective of the formula was to estimate how many wins a team should have won based on the number of runs scored and runs allowed. You can read more about the theorem on <a href="https://en.wikipedia.org/wiki/Pythagorean_expectation">Wikipedia</a> and <a href="https://towardsdatascience.com/pythagorean-expectation-in-sports-analytics-with-examples-from-different-sports-f5e599530a6c">this article</a> that also presents few practical examples. Originally the form of the formula looks like this:
+$$W \approx \frac{(\text{runs scored}) ^ 2}{(\text{runs scored}) ^ 2 + (\text{runs allowed}) ^ 2}\text{,}$$
+where $W$ is the ratio of team&rsquo;s wins or <strong>win percentage</strong>.</p>
+<p>However, we can generalize the above formula to other sports. If we use general notation, where $P_F$ denotes <em>points for</em> and $P_A$ denotes <em>points against</em>, then formula then converts to:</p>
+<p>$$
+W \approx \frac{{P_F} ^ x}{P_F ^ x + P_A ^ x} \text{.}
+$$</p>
+<p>Notice that in the second formula the exponents undefined. As seen in the first formula for baseball, Bill James used $x = 2$. Later there were some corrections for baseball to set $x = 1.83$. The value of $x$ depends on the nature of the sport, in football for example we see way lower number of points (goals) scored in comparison to basketball, so in order for the formula to be a good estimator of win percentage we need to set the $x$ value correctly.</p>
+<h2 id="example-on-euroleague">
+  Example on Euroleague
+  <a class="heading-link" href="#example-on-euroleague">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>In this article I will demonstrate how well does Pythagorean theorem apply to basketball, specifically to the strongest european competition of Turkish Airlines Euroleague.</p>
+<p>For the analysis I used seasons of 2016/2017, 2017/2018, 2018/2019 and 2020/2021.</p>
+<p>Let&rsquo;s first draw a plot of Pythagorean expectation vs. winning ratio for each team in listed seasons. Here, I used $x = 2$ just to show that we can also draw conclusions with <em>original</em> exponent.</p>
+<p><a href="/pythagorean-exp-intro_files/pyth_classic.png"><img src="/pythagorean-exp-intro_files/pyth_classic.png" alt="Pythagorean expectation classic"></a></p>
+<p>We observe that the values on vertical and horizontal axis are not in the same range, therefore we conclude that the $x = 2$ is not the best setting for this data. However, there definitely is a linear relationship between winning ratio and Pythagorean expectation. Green line in plots presents the line obtained by linear regression. Additionally, I also calculated Pearson correlation coefficients are also calculated to confirm the linear relationship:</p>
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>season</th>
+      <th>corr. coef.</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>2016/17</td>
+      <td>0.954</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2017/18</td>
+      <td>0.887</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2018/19</td>
+      <td>0.963</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>2020/21</td>
+      <td>0.945</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<h3 id="finding-the-best-exponent">
+  Finding the best exponent
+  <a class="heading-link" href="#finding-the-best-exponent">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>We observe that there is obvious correlation between Pythagorean expectation and winning ratio, however $x = 2$ is not the choice to directly estimate winning ratio from points. To get the best fit for $x$ I constructed simple loss function:
+$$
+L(x) = \frac{\sum_{i=1}^n | W_i - \frac{{P_{F_i}} ^ x}{P_{F_i} ^ x + P_{A_i} ^ x}|}{n} \text{.}
+$$
+The loss function minimizes the average difference between winning ratio and Pythagorean expectation across all teams with respect to parameter $x$. For loss function minimization I used function <code>fmin_l_bfgs_b</code> from <code>scipy</code> library. The values were calculated for each season separately:</p>
+
+
+<div>
+<style scoped>
+    .dataframe {
+      margin-left:  auto;
+      margin-right: auto;
+    }
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Season</th>
+      <th>Best x</th>
+      <th>error</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>2016/17</td>
+      <td>11.24</td>
+      <td>0.034</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2017/18</td>
+      <td>10.95</td>
+      <td>0.056</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2018/19</td>
+      <td>11.03</td>
+      <td>0.039</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>2020/21</td>
+      <td>11.10</td>
+      <td>0.041</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<p>The best fits for each of four seasons are pretty similar, $x \approx 11$. It could be that the $L(x)$ has multiple local minima and <code>fmin_l_bfgs_b</code> might not have returned the global minimum. We can verify that these $x$ values are indeed the best fit with respect to $L(x)$ using brute force by simply evaluating function from on range [0, 30] with step of 0.05.</p>
+<p><img src="/pythagorean-exp-intro_files/errors.png" alt="png"></p>
+<p>These seem to be convex functions, so there should not be any problems getting the smallest error using any of two methods. Quick glance at Loss vs. x plots suffices to confirm that $x \approx 11$ seems to be a good fit for this data, however we also can also show values obtained using this method:</p>
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Season</th>
+      <th>Best x</th>
+      <th>Error</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>2016/17</td>
+      <td>11.25</td>
+      <td>0.034</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2017/18</td>
+      <td>10.95</td>
+      <td>0.056</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2018/19</td>
+      <td>11.00</td>
+      <td>0.039</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>2020/21</td>
+      <td>11.10</td>
+      <td>0.041</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<p>Comparing both tables, we conclude that the values are more or less identical.</p>
+<h3 id="pythagorean-expectation-using-best-exponent">
+  Pythagorean expectation using best exponent
+  <a class="heading-link" href="#pythagorean-expectation-using-best-exponent">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Finally, we use the obtained values for $x$ to fix the Pythagorean expectation to get the best fit to given data. Note that green line in this case, does not represent the line obtained linear regression, it is simply just $y = x$ line.</p>
+<p><img src="/pythagorean-exp-intro_files/pyth_fitted.png" alt="png"></p>
+<p>Again, we confirm strong linear correlation between Pythagorean expectation and winning ratio:</p>
+
+
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>season</th>
+      <th>corr</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>2016/17</td>
+      <td>0.956</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2017/18</td>
+      <td>0.884</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2018/19</td>
+      <td>0.967</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>2020/21</td>
+      <td>0.944</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<p>Here, the interpretation of the plots should the following: the teams that are above the line managed to win fewer games than expected, considering the number of points scored and allowed. The teams that are below the line managed to win more games than expected.</p>
+<p>Few examples:
+
+
+<ul>
+    <li>In 2017/2018 Barcelona finished 13th, however they definitely had potential to reach the Top 8</li>
+    <li>In 2020/2021 Fenerbahce finished 7th with winning ratio close to 0.6, but it seems that they had some luck on their side, since their expected winning ratio is below 0.5, which would leave them without Top 8.</li>
+</ul>
+</p>
 
       </div>
 
@@ -179,7 +481,23 @@
       </footer>
     </article>
 
-    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css"
+    integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
+  
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"
+    integrity="sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js"
+    integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"
+    onload="renderMathInElement(document.body,
+      {
+        delimiters: [
+          {left: '$$', right: '$$', display:true},
+          {left: '$', right: '$', display:false},
+          {left: '\\(', right: '\\)', display: false},
+          {left: '\\[', right: '\\]', display: true}
+        ]
+      }
+    );"></script>
   </section>
 
     </div>
