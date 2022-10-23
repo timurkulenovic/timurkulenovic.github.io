@@ -168,7 +168,7 @@
             </span>
             <span class="reading-time">
               <i class="fa fa-clock-o" aria-hidden="true"></i>
-              4-minute read
+              5-minute read
             </span>
           </div>
           
@@ -211,9 +211,9 @@ where $W$ is the ratio of team&rsquo;s wins or <strong>win percentage</strong>.<
 W \approx \frac{{P_F} ^ x}{P_F ^ x + P_A ^ x} \text{.}
 $$</p>
 <p>Notice that in the second formula the exponents undefined. As seen in the first formula for baseball, Bill James used $x = 2$. Later there were some corrections for baseball to set $x = 1.83$. The value of $x$ depends on the nature of the sport, in football for example we see way lower number of points (goals) scored in comparison to basketball, so in order for the formula to be a good estimator of win percentage we need to set the $x$ value correctly.</p>
-<h2 id="example-on-euroleague">
-  Example on Euroleague
-  <a class="heading-link" href="#example-on-euroleague">
+<h2 id="pythagorean-expectation-applied-to-euroleague">
+  Pythagorean expectation applied to Euroleague
+  <a class="heading-link" href="#pythagorean-expectation-applied-to-euroleague">
     <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
     <span class="sr-only">Link to heading</span>
   </a>
@@ -399,15 +399,8 @@ The loss function minimizes the average difference between winning ratio and Pyt
 </table>
 </div>
 
-<p>Comparing both tables, we conclude that the values are more or less identical.</p>
-<h3 id="pythagorean-expectation-using-best-exponent">
-  Pythagorean expectation using best exponent
-  <a class="heading-link" href="#pythagorean-expectation-using-best-exponent">
-    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h3>
-<p>Finally, we use the obtained values for $x$ to fix the Pythagorean expectation to get the best fit to given data. Note that green line in this case, does not represent the line obtained linear regression, it is simply just $y = x$ line.</p>
+<p>Comparing both tables, we conclude that the values are more or less identical and therefore both methods are adequate for finding the best value for parameter $x$.</p>
+<p>Finally, we use the obtained values for $x$ to fix the Pythagorean expectation to get the best fit to given data. Note that green line in this case does not represent the line obtained linear regression, it is simply just $y = x$ line.</p>
 <p><a href="/pythagorean-exp-intro_files/pyth_fitted.png"><img src="/pythagorean-exp-intro_files/pyth_fitted.png" alt="png"></a></p>
 <p>Again, we confirm strong linear correlation between Pythagorean expectation and winning ratio:</p>
 
@@ -459,12 +452,12 @@ The loss function minimizes the average difference between winning ratio and Pyt
 </div>
 
 <p>Here, the interpretation of the plots should the following: the teams that are above the line managed to win fewer games than expected, considering the number of points scored and allowed. The teams that are below the line managed to win more games than expected.</p>
-<p>Few examples:
+<p>Few examples of interpretation:
 
 
 <ul>
     <li>In 2017/2018 Barcelona finished 13th, however they definitely had potential to reach the Top 8</li>
-    <li>In 2020/2021 Fenerbahce finished 7th with winning ratio close to 0.6, but it seems that they had some luck on their side, since their expected winning ratio is below 0.5, which would leave them without Top 8.</li>
+    <li>In 2020/2021 Fenerbahce finished 7th with winning ratio close to 0.6, but it seems that they had some luck on their side. Their expected winning ratio is below 0.5, which would leave them without Top 8.</li>
 </ul>
 </p>
 
