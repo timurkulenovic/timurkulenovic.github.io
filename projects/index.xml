@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Euroleague on Timur Kulenović</title>
-    <link>https://kulenovic.si/tags/euroleague/</link>
-    <description>Recent content in Euroleague on Timur Kulenović</description>
+    <title>Projects on Timur Kulenović</title>
+    <link>https://kulenovic.si/projects/</link>
+    <description>Recent content in Projects on Timur Kulenović</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Mon, 24 Oct 2022 20:00:00 +0200</lastBuildDate><atom:link href="https://kulenovic.si/tags/euroleague/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 24 Oct 2022 20:00:00 +0200</lastBuildDate><atom:link href="https://kulenovic.si/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Euroleague Pythagorean Expectation</title>
       <link>https://kulenovic.si/projects/pythagorean/</link>
@@ -15,6 +15,16 @@
       
       <guid>https://kulenovic.si/projects/pythagorean/</guid>
       <description>What is Pythagorean expectation? Link to heading Pythagorean expectation is a formula that was originally derived by Bill James to be used in baseball. The objective of the formula was to estimate how many wins a team should have won based on the number of scored runs and allowed runs. You can read more about the theorem on Wikipedia and this article that also presents few practical examples. Originally the form of the formula looks like this: $$W \approx \frac{(\text{scored runs}) ^ 2}{(\text{scored runs}) ^ 2 + (\text{allowed runs}) ^ 2}\text{,}$$ where $W$ is the ratio of team&amp;rsquo;s wins or winning ratio.</description>
+    </item>
+    
+    <item>
+      <title>Sport teams logos repository</title>
+      <link>https://kulenovic.si/projects/sports-logos/</link>
+      <pubDate>Mon, 24 Oct 2022 18:00:00 +0200</pubDate>
+      
+      <guid>https://kulenovic.si/projects/sports-logos/</guid>
+      <description>I created Github repository that contains logos of sports teams. I plan to regularly add new leagues. Currently the following leagues are available:
+Basketball NBA1 Euroleague ABA Football Premier League directory for this league only contains the logos for teams currently competing in the league.&amp;#160;&amp;#x21a9;&amp;#xfe0e;</description>
     </item>
     
   </channel>

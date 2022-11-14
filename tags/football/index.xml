@@ -10,10 +10,10 @@
     <lastBuildDate>Mon, 24 Oct 2022 18:00:00 +0200</lastBuildDate><atom:link href="https://kulenovic.si/tags/football/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Sport teams logos repository</title>
-      <link>https://kulenovic.si/posts/sports-logos/</link>
+      <link>https://kulenovic.si/projects/sports-logos/</link>
       <pubDate>Mon, 24 Oct 2022 18:00:00 +0200</pubDate>
       
-      <guid>https://kulenovic.si/posts/sports-logos/</guid>
+      <guid>https://kulenovic.si/projects/sports-logos/</guid>
       <description>I created Github repository that contains logos of sports teams. I plan to regularly add new leagues. Currently the following leagues are available:
 Basketball NBA1 Euroleague ABA Football Premier League directory for this league only contains the logos for teams currently competing in the league.&amp;#160;&amp;#x21a9;&amp;#xfe0e;</description>
     </item>

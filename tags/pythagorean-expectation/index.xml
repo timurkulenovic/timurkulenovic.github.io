@@ -10,10 +10,10 @@
     <lastBuildDate>Mon, 24 Oct 2022 20:00:00 +0200</lastBuildDate><atom:link href="https://kulenovic.si/tags/pythagorean-expectation/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Euroleague Pythagorean Expectation</title>
-      <link>https://kulenovic.si/posts/pythagorean/</link>
+      <link>https://kulenovic.si/projects/pythagorean/</link>
       <pubDate>Mon, 24 Oct 2022 20:00:00 +0200</pubDate>
       
-      <guid>https://kulenovic.si/posts/pythagorean/</guid>
+      <guid>https://kulenovic.si/projects/pythagorean/</guid>
       <description>What is Pythagorean expectation? Link to heading Pythagorean expectation is a formula that was originally derived by Bill James to be used in baseball. The objective of the formula was to estimate how many wins a team should have won based on the number of scored runs and allowed runs. You can read more about the theorem on Wikipedia and this article that also presents few practical examples. Originally the form of the formula looks like this: $$W \approx \frac{(\text{scored runs}) ^ 2}{(\text{scored runs}) ^ 2 + (\text{allowed runs}) ^ 2}\text{,}$$ where $W$ is the ratio of team&amp;rsquo;s wins or winning ratio.</description>
     </item>
     
