@@ -31,6 +31,9 @@
 
 
 <link rel="canonical" href="https://kulenovic.si/projects/pythagorean/">
+<link rel="stylesheet" href="/css/filetree.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript" src="/js/filetree.js"></script>
 
 
 
@@ -359,6 +362,7 @@ The loss function minimizes the average difference between winning ratio and Pyt
 <p>Again, we confirm strong linear correlation between Pythagorean expectation and winning ratio:</p>
 
 
+<div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
@@ -400,13 +404,15 @@ The loss function minimizes the average difference between winning ratio and Pyt
 </table>
 </div>
 
-<p>Here, the interpretation of the plots should be the following: the teams that are above the line managed to win fewer games than expected, considering the number of scored points and allowed points. The teams that are below the line managed to win more games than expected.</p>
+<p>Here, the interpretation of the plots should be the following: the teams that are above the line managed to
+win fewer games than expected, considering the number of scored points and allowed points. The teams that
+are below the line managed to win more games than expected.</p>
 <p>Few interpretations:</p>
 <ul>
 <li>In 2017/2018 Barcelona finished 13th, however they definitely had potential to reach the Top 8.</li>
 <li>In 2020/2021 Fenerbahce finished 7th with winning ratio close to 0.6, but it seems that they had some luck on their side. Their expected winning ratio is below 0.5, which would leave them without Top 8.</li>
 </ul>
-<p>You can find all the code for this article in <a href="https://github.com/timurkulenovic/basketball-pythagorean-expectation">Github repository</a>.</p>
+<p>You can find all the code for this article in my <a href="https://github.com/timurkulenovic/basketball-pythagorean-expectation">Github repository</a>.</p>
 
   </article>
 </section>
