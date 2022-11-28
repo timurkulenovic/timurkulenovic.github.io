@@ -31,9 +31,7 @@
 
 
 <link rel="canonical" href="https://kulenovic.si/projects/pythagorean/">
-<link rel="stylesheet" href="/css/filetree.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script type="text/javascript" src="/js/filetree.js"></script>
 
 
 
@@ -186,7 +184,7 @@ $$</p>
 <p>In this article I will demonstrate how well Pythagorean theorem applies to basketball, specifically to the strongest european competition of Turkish Airlines Euroleague.</p>
 <p>For the analysis I used seasons of 2016/2017, 2017/2018, 2018/2019 and 2020/2021.</p>
 <p>Let&rsquo;s draw a plot of Pythagorean expectation vs. $W$ for each team in listed seasons. Here, I used $x = 2$ just to show that we can also draw conclusions using the <em>original</em> $x$ value:</p>
-<p><a href="/pythagorean-exp-intro_files/pyth_classic.png"><img src="/pythagorean-exp-intro_files/pyth_classic.png" alt="Pythagorean expectation classic"></a></p>
+<p><a href="/content-files/pythagorean/pyth_classic.png"><img src="/content-files/pythagorean/pyth_classic.png" alt="Pythagorean expectation classic"></a></p>
 <p>We observe that the values on vertical and horizontal axis are not in the same range, therefore we conclude that the $x = 2$ is not the best setting for this data. However, there definitely is a linear relationship between winning ratio and Pythagorean expectation. The green line in plots presents the line obtained by linear regression. Furthermore, I calculated Pearson correlation coefficients to confirm the linear relationship:</p>
 
 
@@ -298,7 +296,7 @@ The loss function minimizes the average difference between winning ratio and Pyt
 </div>
 
 <p>The best fits for each of four seasons are pretty similar, $x \approx 11$. It could be that the $L(x)$ has multiple local minima and <code>fmin_l_bfgs_b</code> might not have returned the global minimum. We can verify that these $x$ values are indeed the best fit with respect to $L(x)$ using brute force by simply evaluating function on range $x$ = [0, 30] with step of 0.05.</p>
-<p><a href="/pythagorean-exp-intro_files/errors.png"><img src="/pythagorean-exp-intro_files/errors.png" alt="png"></a></p>
+<p><a href="/content-files/pythagorean/errors.png"><img src="/content-files/pythagorean/errors.png" alt="png"></a></p>
 <p>These seem to be convex functions, so there should not be any problems getting the smallest loss using any of the two methods. Quick glance at plots suffices to confirm that $x \approx 11$ seems to be a good fit for this data, however we also can also show values obtained using this method:</p>
 
 
@@ -358,7 +356,7 @@ The loss function minimizes the average difference between winning ratio and Pyt
   </a>
 </h3>
 <p>Finally, we use the obtained $x$ values, to adjust the Pythagorean expectation in order to get the best fit for given data. Note that the green line in this case does not represent the line obtained using linear regression, it is simply just $y = x$ line.</p>
-<p><a href="/pythagorean-exp-intro_files/pyth_fitted.png"><img src="/pythagorean-exp-intro_files/pyth_fitted.png" alt="png"></a></p>
+<p><a href="/content-files/pythagorean/pyth_fitted.png"><img src="/content-files/pythagorean/pyth_fitted.png" alt="png"></a></p>
 <p>Again, we confirm strong linear correlation between Pythagorean expectation and winning ratio:</p>
 
 
