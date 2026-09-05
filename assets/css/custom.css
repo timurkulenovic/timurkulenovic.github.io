@@ -1,0 +1,246 @@
+/* ==========================================================================
+   Custom design layer for kulenovic.si
+   Loaded after the hugo-coder theme styles (see customCSS in hugo.toml).
+   Tasteful refinements: accent palette, avatar, typography, nav, motion.
+   ========================================================================== */
+
+:root {
+  /* Accent palette — a calm teal that reads well in light & dark mode */
+  --ks-accent: #2bb3a3;
+  --ks-accent-strong: #159c8c;
+  --ks-accent-soft: rgba(43, 179, 163, 0.12);
+  --ks-radius: 14px;
+  --ks-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  --ks-shadow-sm: 0 4px 14px rgba(0, 0, 0, 0.06);
+  --ks-transition: 220ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Override the theme accent with our own, for both schemes */
+.colorscheme-light {
+  --accent: var(--ks-accent);
+  --accent-strong: var(--ks-accent-strong);
+}
+.colorscheme-dark {
+  --accent: var(--ks-accent);
+  --accent-strong: #3dd3c1;
+  --ks-accent-soft: rgba(61, 211, 193, 0.16);
+}
+
+/* ---- Base typography ---- */
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-feature-settings: "kern" 1, "liga" 1;
+  letter-spacing: 0.005em;
+}
+
+h1, h2, h3, h4 {
+  letter-spacing: -0.01em;
+}
+
+/* ---- Layout container: lift content into a soft card ---- */
+.content {
+  padding-top: 1rem;
+}
+
+.container {
+  max-width: 860px;
+}
+
+.page,
+.list,
+.centered {
+  padding: 2rem 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .page,
+  .list,
+  .centered {
+    padding: 2.5rem 2.5rem;
+  }
+}
+
+/* ---- Navigation ---- */
+.navigation {
+  border-bottom: 1px solid var(--border-color, rgba(0, 0, 0, 0.08));
+  backdrop-filter: saturate(180%) blur(8px);
+  background-color: var(--bg, #fff);
+}
+
+.navigation-title {
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  transition: color var(--ks-transition);
+}
+.navigation-title:hover {
+  color: var(--ks-accent);
+}
+
+.navigation-link {
+  position: relative;
+  transition: color var(--ks-transition);
+}
+.navigation-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  height: 2px;
+  width: 0;
+  background: var(--ks-accent);
+  transition: width var(--ks-transition);
+}
+.navigation-link:hover {
+  color: var(--ks-accent);
+}
+.navigation-link:hover::after {
+  width: 100%;
+}
+
+/* ---- Home / about ---- */
+.about .avatar {
+  margin: 0 auto 1.5rem;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: var(--ks-shadow);
+  border: 3px solid var(--ks-accent-soft);
+  transition: transform var(--ks-transition), box-shadow var(--ks-transition);
+}
+.about .avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.about .avatar:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.14);
+}
+
+.about h1 {
+  font-size: 2.4rem;
+  margin-bottom: 0.25rem;
+}
+.about h2 {
+  color: var(--ks-accent);
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
+
+/* Social icons: gentle lift + accent on hover */
+.about ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 0.25rem;
+  padding: 0;
+}
+.about ul li a {
+  display: inline-flex;
+  transition: transform var(--ks-transition), color var(--ks-transition);
+  padding: 0.5rem 0.75rem;
+}
+.about ul li a:hover {
+  transform: translateY(-4px);
+  color: var(--ks-accent);
+}
+
+/* ---- Links & headings (articles) ---- */
+a {
+  transition: color var(--ks-transition);
+}
+.content a:hover {
+  color: var(--ks-accent);
+}
+
+h2, h3 {
+  position: relative;
+}
+.heading-link {
+  opacity: 0;
+  transition: opacity var(--ks-transition);
+}
+h2:hover .heading-link,
+h3:hover .heading-link {
+  opacity: 1;
+}
+
+/* ---- Tables: cleaner styling ---- */
+.dataframe,
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1.5rem 0;
+  font-size: 0.95rem;
+  overflow: hidden;
+  border-radius: var(--ks-radius);
+  box-shadow: var(--ks-shadow-sm);
+}
+.dataframe th,
+.dataframe td,
+table th,
+table td {
+  padding: 0.6rem 0.9rem;
+  border: none;
+}
+.dataframe thead th,
+table thead th {
+  background: var(--ks-accent-soft);
+  color: var(--fg, #111);
+  font-weight: 600;
+  text-align: left;
+}
+.dataframe tbody tr:nth-child(even),
+table tbody tr:nth-child(even) {
+  background: var(--ks-accent-soft);
+}
+
+/* ---- Images: rounded + shadow ---- */
+.content img {
+  border-radius: var(--ks-radius);
+  box-shadow: var(--ks-shadow);
+  margin: 1.5rem 0;
+}
+
+/* ---- Code ---- */
+code {
+  border-radius: 6px;
+  padding: 0.15em 0.4em;
+  font-size: 0.9em;
+}
+pre {
+  border-radius: var(--ks-radius);
+  box-shadow: var(--ks-shadow-sm);
+}
+
+/* ---- Footer ---- */
+.footer {
+  border-top: 1px solid var(--border-color, rgba(0, 0, 0, 0.08));
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  font-size: 0.85rem;
+  opacity: 0.85;
+}
+
+/* ---- Dark-mode toggle button ---- */
+.colorscheme-toggle {
+  border-radius: 50%;
+  transition: background-color var(--ks-transition), transform var(--ks-transition);
+}
+.colorscheme-toggle:hover {
+  background: var(--ks-accent-soft);
+  transform: rotate(20deg);
+}
+
+/* ---- CV pdf viewer ---- */
+#the-canvas {
+  border-radius: var(--ks-radius);
+  box-shadow: var(--ks-shadow-sm);
+}

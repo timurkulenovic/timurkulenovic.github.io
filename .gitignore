@@ -1,0 +1,16 @@
+# Hugo build output
+/public/
+/resources/_gen/
+
+# Hugo lock file (we pin the theme via submodule instead)
+/.hugo_build.lock
+
+# OS / editor cruft
+.DS_Store
+*.swp
+*.swo
+.idea/
+.vscode/
+
+# Logs
+*.log
