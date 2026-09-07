@@ -218,10 +218,15 @@ tbody tr:nth-child(even) { background: var(--accent-soft); }
   border: 3px solid var(--accent-soft);
   transition: transform var(--transition), box-shadow var(--transition);
 }
-.about .avatar img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.about .avatar img { width: 100%; height: 100%; object-fit: cover; object-position: center top; display: block; }
 .about .avatar:hover { transform: translateY(-3px) scale(1.02); box-shadow: 0 14px 36px rgba(0,0,0,0.16); }
 .about h1 { font-size: 2.4rem; }
-.about .subtitle { color: var(--accent); font-weight: 500; font-size: 1.25rem; margin: 0 0 1.5rem; letter-spacing: 0.01em; }
+.about .subtitle { color: var(--accent); font-weight: 500; font-size: 1.25rem; margin: 0 0 0.5rem; letter-spacing: 0.01em; }
+.about .location {
+  display: inline-flex; align-items: center; gap: 0.4rem;
+  color: var(--muted); font-size: 1rem; margin: 0 0 1.5rem;
+}
+.about .location svg { width: 18px; height: 18px; color: var(--accent); }
 .social { list-style: none; display: flex; justify-content: center; gap: 0.25rem; padding: 0; margin: 0; }
 .social a {
   display: inline-flex; padding: 0.5rem 0.75rem; color: var(--fg);
@@ -243,6 +248,20 @@ tbody tr:nth-child(even) { background: var(--accent-soft); }
   .post-list li { flex-direction: column; gap: 0.15rem; }
   .post-list .date { min-width: 0; font-size: 0.8rem; }
 }
+
+/* ---- Calendars feed list ---- */
+.feed-list { list-style: none; padding: 0; margin: 1.5rem 0 0; }
+.feed-list li { border-bottom: 1px solid var(--border); }
+.feed {
+  display: flex; align-items: center; gap: 1rem; padding: 0.9rem 0.25rem; color: var(--fg);
+  transition: background var(--transition), transform var(--transition);
+}
+.feed:hover { background: var(--accent-soft); transform: translateX(2px); }
+.feed-icon { width: 48px; height: 48px; object-fit: contain; border-radius: 10px; flex: 0 0 auto; background: var(--bg-elev); padding: 4px; }
+.feed-text { display: flex; flex-direction: column; gap: 0.15rem; }
+.feed-title { color: var(--fg-strong); font-weight: 600; font-size: 1.05rem; }
+.feed-desc { color: var(--muted); font-size: 0.9rem; }
+.feed:hover .feed-title { color: var(--accent); }
 
 /* ---- CV pdf viewer (native) ---- */
 .pdf-frame object,

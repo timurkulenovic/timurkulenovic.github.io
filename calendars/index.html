@@ -6,7 +6,7 @@
   <meta name="color-scheme" content="light dark">
   <title>Calendars · Timur Kulenović</title>
   <meta name="author" content="Timur Kulenović">
-  <meta name="description" content="Subscribable iCalendar feeds generated from public sports schedules.">
+  <meta name="description" content="Subscribable iCalendar feeds for basketball — ABA Liga and Piflarska liga. Your calendar app updates automatically.">
   <link rel="canonical" href="https://kulenovic.si/calendars/">
   <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
   <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
@@ -17,7 +17,7 @@
 <body>
   <header class="nav">
     <div class="container">
-      <a class="nav-brand" href="/">Timur Kulenović</a>
+      <a class="nav-brand" href="/">Timur</a>
       <nav>
         <ul class="nav-links" data-nav-links>
           <li><a class="nav-link" href="/projects/">Projects</a></li>
@@ -44,24 +44,28 @@
           <header>
             <h1 class="page-title">Calendars</h1>
           </header>
-          <p>Subscribable iCalendar feeds generated from public sports schedules. Subscribe in Apple Calendar, Google Calendar, or Outlook — your client pulls updates automatically.</p>
+          <p>Calendars for basketball tournaments and leagues — <strong>subscribable iCalendar feeds</strong> your calendar app updates automatically.</p>
 
-          <h2 id="aba-liga">
-            ABA Liga
-            <a class="heading-link" href="#aba-liga" aria-label="Link to heading">#</a>
-          </h2>
-          <p>Match dates scraped from the <a href="https://www.aba-liga.com/calendar/26/1/">ABA Liga calendar</a> and published as per-team <code>.ics</code> feeds. A GitHub Action refreshes the source daily, so subscribers always see the latest schedule.</p>
-          <ul>
-            <li><strong>Picker page:</strong> <a href="https://timurkulenovic.github.io/aba-league-calendar/">kulenovic.si/aba-league-calendar</a></li>
-            <li><strong>All matches:</strong> <code>webcal://timurkulenovic.github.io/aba-league-calendar/ics/all.ics</code></li>
-            <li><strong>Per team:</strong> <code>webcal://timurkulenovic.github.io/aba-league-calendar/ics/&lt;team-slug&gt;.ics</code>
-              <ul>
-                <li><code>cedevita-olimpija.ics</code></li>
-                <li><code>perspektiva-ilirija.ics</code></li>
-                <li><code>partizan-mozzart-bet.ics</code></li>
-              </ul>
+          <h2 id="subscribable-feeds">Subscribable feeds <a class="heading-link" href="#subscribable-feeds" aria-label="Link to heading">#</a></h2>
+          <ul class="feed-list">
+            <li>
+              <a class="feed" href="/calendars/aba-league-calendar/">
+                <img class="feed-icon" src="/images/aba-logo.png" alt="" width="48" height="52">
+                <span class="feed-text">
+                  <span class="feed-title">ABA Liga</span>
+                  <span class="feed-desc">Per-team .ics feeds, auto-updated daily.</span>
+                </span>
+              </a>
             </li>
-            <li><strong>Source:</strong> <a href="https://github.com/timurkulenovic/aba-league-calendar">github.com/timurkulenovic/aba-league-calendar</a></li>
+            <li>
+              <a class="feed" href="/calendars/piflarska-liga-calendar/">
+                <img class="feed-icon" src="/images/piflarska-logo.jpg" alt="" width="48" height="48">
+                <span class="feed-text">
+                  <span class="feed-title">Piflarska liga</span>
+                  <span class="feed-desc">Feed for the Piflarska liga quiz schedule (7. sezona).</span>
+                </span>
+              </a>
+            </li>
           </ul>
         </article>
       </div>
@@ -69,11 +73,8 @@
   </main>
 
   <footer class="footer">
-    <div class="container">
-      © 2026 Timur Kulenović
-    </div>
+    <div class="container">© 2026 Timur Kulenović</div>
   </footer>
-
   <script src="/js/main.js" defer></script>
 </body>
 </html>
