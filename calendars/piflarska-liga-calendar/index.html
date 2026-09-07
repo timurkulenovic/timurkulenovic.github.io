@@ -13,7 +13,6 @@
   <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
   <link rel="stylesheet" href="/css/style.css">
-  <link rel="stylesheet" href="/css/picker.css">
 </head>
 <body>
   <header class="nav">
@@ -40,21 +39,21 @@
 
   <main>
     <div class="content">
-      <div class="container">
-        <div class="picker" style="--p-accent:#fbbf24; --p-accent2:#f59e0b;">
+      <div class="container page">
+        <article class="prose">
           <h1><span class="grad">Piflarska liga</span></h1>
   <p class="sub">Season 7 · subscribable calendar</p>
   <p class="hint">Subscribe once and your calendar app pulls the schedule automatically. Pick <b>Google</b> or <b>Apple</b>, or <b>Copy</b> the URL for any other calendar app.</p>
   <p class="hint"><b>Google not working?</b> Google’s one-click is flaky. If it says “unable to open calendar”, open Google Calendar → Settings → Add calendar → From URL → paste the copied <code>https://…/*.ics</code> link. That always works.</p>
 
-  <div class="subscribe">
+  <div class="cal-subscribe">
     <span class="label">All 8 events · one feed</span>
-    <a class="btn btn-sub" href="https://calendar.google.com/calendar/render?cid=webcal%3A%2F%2Fkulenovic.si%2Fpiflarska-liga-calendar%2Fics%2Fpiflarska-liga.ics" target="_blank" rel="noopener">Google</a>
-    <a class="btn btn-sub" href="webcal://kulenovic.si/piflarska-liga-calendar/ics/piflarska-liga.ics">Apple</a>
-    <button class="btn-sec" onclick="copy('https://kulenovic.si/piflarska-liga-calendar/ics/piflarska-liga.ics', this)">Copy</button>
+    <a class="cal-btn cal-btn-primary" href="https://calendar.google.com/calendar/render?cid=webcal%3A%2F%2Fkulenovic.si%2Fpiflarska-liga-calendar%2Fics%2Fpiflarska-liga.ics" target="_blank" rel="noopener">Google</a>
+    <a class="cal-btn cal-btn-primary" href="webcal://kulenovic.si/piflarska-liga-calendar/ics/piflarska-liga.ics">Apple</a>
+    <button class="cal-btn cal-btn-secondary" onclick="copy('https://kulenovic.si/piflarska-liga-calendar/ics/piflarska-liga.ics', this)">Copy</button>
   </div>
 
-  <ul class="events">
+  <ul class="cal-list cal-events">
       <li><span class="date">Thursday, 10 September 2026</span><span class="what"><span class="num">1. KVIZ:</span> <span class="venue">Jazz Klub 300</span></span></li>
       <li><span class="date">Monday, 21 September 2026</span><span class="what"><span class="num">2. KVIZ:</span> <span class="venue">BAZA</span></span></li>
       <li><span class="date">Thursday, 8 October 2026</span><span class="what"><span class="num">3. KVIZ:</span> <span class="venue">WOOP! Arena</span></span></li>
@@ -65,11 +64,11 @@
       <li><span class="date">Saturday, 19 December 2026</span><span class="what"><span class="finale">FINALE:</span> <span class="venue">Kazina Jazz Club</span></span></li>
   </ul>
 
-  <p class="note">
+  <p class="cal-note">
     Piflarska liga, season 7 ·
     <a href="https://github.com/timurkulenovic/piflarska-liga-calendar" target="_blank" rel="noopener">source</a>
   </p>
-        </div>
+        </article>
       </div>
     </div>
   </main>

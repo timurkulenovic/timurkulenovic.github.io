@@ -249,19 +249,76 @@ tbody tr:nth-child(even) { background: var(--accent-soft); }
   .post-list .date { min-width: 0; font-size: 0.8rem; }
 }
 
-/* ---- Calendars feed list ---- */
-.feed-list { list-style: none; padding: 0; margin: 1.5rem 0 0; }
-.feed-list li { border-bottom: 1px solid var(--border); }
-.feed {
+/* ---- Shared entry list (Projects + Calendars) ---- */
+.entry-list { list-style: none; padding: 0; margin: 1.5rem 0 0; }
+.entry-list li { border-bottom: 1px solid var(--border); }
+.entry {
   display: flex; align-items: center; gap: 1rem; padding: 0.9rem 0.25rem; color: var(--fg);
   transition: background var(--transition), transform var(--transition);
 }
-.feed:hover { background: var(--accent-soft); transform: translateX(2px); }
-.feed-icon { width: 48px; height: 48px; object-fit: contain; border-radius: 10px; flex: 0 0 auto; background: var(--bg-elev); padding: 4px; }
-.feed-text { display: flex; flex-direction: column; gap: 0.15rem; }
-.feed-title { color: var(--fg-strong); font-weight: 600; font-size: 1.05rem; }
-.feed-desc { color: var(--muted); font-size: 0.9rem; }
-.feed:hover .feed-title { color: var(--accent); }
+.entry:hover { background: var(--accent-soft); transform: translateX(2px); }
+.entry-icon { width: 48px; height: 48px; object-fit: contain; border-radius: 10px; flex: 0 0 auto; background: var(--bg-elev); padding: 4px; }
+.entry-text { display: flex; flex-direction: column; gap: 0.15rem; }
+.entry-title { color: var(--fg-strong); font-weight: 600; font-size: 1.05rem; }
+.entry-desc { color: var(--muted); font-size: 0.9rem; }
+.entry:hover .entry-title { color: var(--accent); }
+
+/* Date tile (leading visual for project entries) */
+.date-tile {
+  width: 48px; height: 48px; border-radius: 10px; flex: 0 0 auto;
+  background: var(--bg-elev); border: 1px solid var(--border);
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+}
+.date-tile .month { color: var(--accent); font-size: 0.62rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; line-height: 1; }
+.date-tile .day { color: var(--fg-strong); font-size: 1.15rem; font-weight: 700; line-height: 1.1; }
+
+/* ---- Home: compact projects/calendars block ---- */
+.home-lists { max-width: 540px; margin: 2.5rem auto 0; text-align: left; }
+.home-label {
+  font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
+  color: var(--muted); margin: 1.5rem 0 0.25rem; text-align: left;
+}
+.home-lists .entry-list { margin-top: 0.25rem; }
+
+/* ---- Calendar picker (site-themed) ---- */
+.cal-subscribe {
+  display: flex; gap: 10px; flex-wrap: wrap; align-items: center;
+  padding: 16px; background: var(--bg-elev); border: 1px solid var(--border);
+  border-radius: 14px; margin: 0 0 28px;
+}
+.cal-subscribe .label { color: var(--muted); font-size: 0.9rem; margin-right: auto; }
+.cal-btn {
+  border: 0; cursor: pointer; font-size: 0.85rem; font-weight: 600;
+  padding: 8px 14px; border-radius: 8px; text-decoration: none;
+  display: inline-flex; align-items: center; justify-content: center;
+  transition: background var(--transition), transform var(--transition), color var(--transition);
+}
+.cal-btn:active { transform: scale(0.97); }
+.cal-btn-primary { background: var(--accent); color: #00121f; }
+.cal-btn-primary:hover { background: var(--accent-strong); }
+.cal-btn-secondary { background: var(--bg-elev); color: var(--fg); border: 1px solid var(--border); }
+.cal-btn-secondary:hover { background: var(--accent-soft); color: var(--accent); }
+a.cal-btn-primary:hover { color: #00121f; }
+
+.cal-list { list-style: none; padding: 0; margin: 0 0 28px; }
+.cal-list li { border-bottom: 1px solid var(--border); }
+.cal-list li:first-child { border-top: 1px solid var(--border); }
+.cal-row { display: flex; align-items: center; gap: 12px; padding: 12px 8px; flex-wrap: wrap; }
+.cal-row .name { color: var(--fg-strong); font-size: 1rem; font-weight: 600; }
+.cal-row .meta { color: var(--muted); font-size: 0.8rem; }
+.cal-row .links { display: flex; gap: 8px; margin-left: auto; }
+
+.cal-events li { padding: 14px 8px; }
+.cal-events .date { display: block; color: var(--accent); font-weight: 700; font-size: 0.82rem; margin-bottom: 4px; }
+.cal-events .what { font-size: 1.05rem; color: var(--fg); }
+.cal-events .what .num { color: var(--muted); font-weight: 600; }
+.cal-events .what .venue { font-weight: 600; }
+.cal-events .what .finale { color: var(--accent); font-weight: 700; }
+
+.cal-note { margin-top: 36px; color: var(--muted); font-size: 0.82rem; text-align: center; }
+.cal-note a, .prose .cal-subscribe a:not(.cal-btn), .prose .cal-list a:not(.cal-btn) { color: var(--accent); }
+.cal-btn-primary, .prose .cal-btn-primary { color: #00121f; }
+a.cal-btn-primary:hover { color: #00121f; }
 
 /* ---- CV pdf viewer (native) ---- */
 .pdf-frame object,
