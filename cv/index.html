@@ -6,7 +6,7 @@
   <meta name="color-scheme" content="light dark">
   <title>Curriculum vitae · Timur Kulenović</title>
   <meta name="author" content="Timur Kulenović">
-  <meta name="description" content="Curriculum vitae of Timur Kulenović, available as an inline PDF and a download.">
+  <meta name="description" content="Curriculum vitae of Timur Kulenović — machine learning engineer at Sportradar, Ljubljana, Slovenia.">
   <link rel="canonical" href="https://kulenovic.si/cv/">
   <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
   <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
@@ -39,31 +39,119 @@
 
   <main>
     <div class="content">
-      <div class="container page">
-        <article class="prose">
-          <header>
-            <h1 class="page-title">Curriculum vitae</h1>
+      <div class="container">
+        <article class="prose cv">
+          <header class="cv-head">
+            <h1>Timur Kulenović</h1>
+            <p class="cv-title">Machine Learning Engineer</p>
+            <p class="cv-loc">Ljubljana, Slovenia</p>
+            <ul class="cv-contact">
+              <li>+386 41 249 891</li>
+              <li><a href="mailto:timur@kulenovic.si">timur@kulenovic.si</a></li>
+              <li><a href="https://kulenovic.si">kulenovic.si</a></li>
+              <li><a href="https://github.com/timurkulenovic" rel="noopener">GitHub</a></li>
+              <li><a href="https://linkedin.com/in/timurkulenovic" rel="noopener">LinkedIn</a></li>
+            </ul>
           </header>
-          <p>You can also <a href="/cv/cv.pdf">get my CV in PDF</a>.</p>
-          <div class="pdf-frame">
-            <object data="/cv/cv.pdf" type="application/pdf" aria-label="Timur Kulenović — CV PDF">
-              <iframe src="/cv/cv.pdf" title="Timur Kulenović — CV PDF">
-                Your browser cannot display the PDF inline.
-                <a href="/cv/cv.pdf">Download the CV (PDF)</a> instead.
-              </iframe>
-            </object>
-          </div>
+
+          <section class="cv-section">
+            <h2>Work Experience</h2>
+            <div class="cv-item">
+              <div class="cv-item-head"><span class="cv-org">Sportradar</span><span class="cv-place">Ljubljana, Slovenia</span></div>
+              <div class="cv-item-sub"><span class="cv-role">Machine Learning Engineer</span><span class="cv-dates">2023 — Now</span></div>
+              <ul class="cv-bullets">
+                <li>Synthesizing real-time market data and betting liabilities to automate optimal odds compilation.</li>
+                <li>Implementing player profiling models enabling automated account limits and fraud detection.</li>
+                <li>Engineering automated trading triggers to monitor liabilities and manage house exposure.</li>
+              </ul>
+            </div>
+            <div class="cv-item">
+              <div class="cv-item-head"><span class="cv-org">Telekom Slovenije</span><span class="cv-place">Ljubljana, Slovenia</span></div>
+              <div class="cv-item-sub"><span class="cv-role">Data Scientist</span><span class="cv-dates">2020 — 2022</span></div>
+              <ul class="cv-bullets">
+                <li>Developed ML models predicting the probability of customers leaving the company — churn models.</li>
+                <li>Clustering of IPTV users for the purpose of segmentation.</li>
+              </ul>
+            </div>
+          </section>
+
+          <section class="cv-section">
+            <h2>Education</h2>
+            <div class="cv-item">
+              <div class="cv-item-head"><span class="cv-org">Faculty of Computer Science and Informatics, University of Ljubljana</span><span class="cv-place">Ljubljana, Slovenia</span></div>
+              <div class="cv-item-sub"><span class="cv-role">M.Sc. in Data Science and Computer Science</span><span class="cv-dates">Oct. 2020 — Ongoing</span></div>
+              <ul class="cv-bullets">
+                <li>Data Science master program is part of DataScience@UL-FRI and focuses on data analysis, statistics and machine learning.</li>
+              </ul>
+            </div>
+            <div class="cv-item">
+              <div class="cv-item-head"><span class="cv-org">Faculty of Computer Science and Informatics, University of Ljubljana</span><span class="cv-place">Ljubljana, Slovenia</span></div>
+              <div class="cv-item-sub"><span class="cv-role">B.Sc. in Computer Science</span><span class="cv-dates">Oct. 2017 — Sep. 2020</span></div>
+            </div>
+          </section>
+
+          <section class="cv-section">
+            <h2>Skills</h2>
+            <dl class="cv-skills">
+              <dt>Programming</dt>
+              <dd>Regular usage of Python, R, Java and SQL.</dd>
+              <dt>Machine learning</dt>
+              <dd>Knowledge of various ML methods. Flink. Kafka.</dd>
+              <dt>Environments</dt>
+              <dd>Comfortable in macOS and Linux (Ubuntu).</dd>
+              <dt>Languages</dt>
+              <dd>English, Slovenian, Bosnian, German (basic).</dd>
+            </dl>
+          </section>
+
+          <section class="cv-section">
+            <h2>Publications</h2>
+            <div class="cv-item">
+              <div class="cv-item-sub"><span class="cv-role">Analysis of home advantage in sports</span><span class="cv-dates">Master Thesis · 2023</span></div>
+              <ul class="cv-bullets">
+                <li>Addressed home advantage in professional basketball and football leagues, focusing on five top-level leagues in each sport. The main goal was to quantify home advantage and compare it between the leagues.</li>
+              </ul>
+            </div>
+            <div class="cv-item">
+              <div class="cv-item-sub"><span class="cv-role">Analysis of tourist movements with the help of Geocaching game</span><span class="cv-dates">Diploma Thesis · 2020</span></div>
+              <ul class="cv-bullets">
+                <li>Geocaching is an outdoor game in which players search for hidden caches at outdoor locations with the help of a website and mobile application. Used web scraping to collect the data users enter into the application and then analyzed the collected data.</li>
+              </ul>
+            </div>
+          </section>
+
+          <section class="cv-section">
+            <h2>Featured projects</h2>
+            <div class="cv-item">
+              <div class="cv-item-sub"><span class="cv-role">Basketball and Football dataset</span><span class="cv-dates">2022</span></div>
+              <ul class="cv-bullets">
+                <li>Collection of high-granularity data of basketball and football matches obtained using web scraping.</li>
+              </ul>
+            </div>
+            <div class="cv-item">
+              <div class="cv-item-sub"><span class="cv-role">Clustering web users based on mouse movement</span><span class="cv-dates">2021</span></div>
+              <ul class="cv-bullets">
+                <li>The objective was to classify web users into groups by performing clustering on their mouse movement data.</li>
+              </ul>
+            </div>
+            <div class="cv-item">
+              <div class="cv-item-sub"><span class="cv-role">Predicting Bundesliga matches outcome</span><span class="cv-dates">2020</span></div>
+              <ul class="cv-bullets">
+                <li>Collected data of German Bundesliga matches and used it to build ML models. The goal was to predict match outcomes by creating a three-class classification problem.</li>
+              </ul>
+            </div>
+          </section>
+
+          <p class="cv-foot">Timur Kulenović · Curriculum Vitae</p>
+          <p style="text-align:center"><a href="/cv/cv.pdf">Download PDF version</a></p>
         </article>
       </div>
     </div>
   </main>
 
   <footer class="footer">
-    <div class="container">
-      © 2026 Timur Kulenović
-    </div>
+    <div class="container">© 2026 Timur Kulenović</div>
   </footer>
-
   <script src="/js/main.js" defer></script>
 </body>
 </html>

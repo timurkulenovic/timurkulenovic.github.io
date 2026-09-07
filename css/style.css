@@ -221,6 +221,7 @@ tbody tr:nth-child(even) { background: var(--accent-soft); }
 .about .avatar img { width: 100%; height: 100%; object-fit: cover; object-position: center top; display: block; }
 .about .avatar:hover { transform: translateY(-3px) scale(1.02); box-shadow: 0 14px 36px rgba(0,0,0,0.16); }
 .about h1 { font-size: 2.4rem; }
+.about .eyebrow { color: var(--muted); font-size: 0.8rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; margin: 0 0 0.5rem; }
 .about .subtitle { color: var(--accent); font-weight: 500; font-size: 1.25rem; margin: 0 0 0.5rem; letter-spacing: 0.01em; }
 .about .location {
   display: inline-flex; align-items: center; gap: 0.4rem;
@@ -320,17 +321,41 @@ a.cal-btn-primary:hover { color: #00121f; }
 .cal-btn-primary, .prose .cal-btn-primary { color: #00121f; }
 a.cal-btn-primary:hover { color: #00121f; }
 
-/* ---- CV pdf viewer (native) ---- */
-.pdf-frame object,
-.pdf-frame iframe {
-  display: block;
-  width: 100%;
-  height: 80vh;
-  min-height: 600px;
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow-sm);
-  background: var(--bg-elev);
+/* ---- CV (HTML recreation) ---- */
+.cv { max-width: 760px; }
+.cv-head { text-align: center; margin-bottom: 2rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border); }
+.cv-head h1 { font-size: 2rem; margin: 0 0 0.25rem; }
+.cv-title { color: var(--accent); font-weight: 600; margin: 0 0 0.5rem; }
+.cv-loc { color: var(--muted); margin: 0 0 1rem; }
+.cv-contact { list-style: none; display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem 1.25rem; padding: 0; margin: 0; font-size: 0.9rem; color: var(--muted); }
+.cv-contact li { display: inline-flex; align-items: center; gap: 0.35rem; }
+.cv-contact a { color: var(--accent); }
+
+.cv-section { margin: 0 0 2.25rem; }
+.cv-section h2 {
+  font-size: 0.78rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--muted); border-bottom: 1px solid var(--border);
+  padding-bottom: 0.4rem; margin-bottom: 1rem;
+}
+.cv-item { margin-bottom: 1.25rem; }
+.cv-item:last-child { margin-bottom: 0; }
+.cv-item-head { display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+.cv-org { font-weight: 700; color: var(--fg-strong); }
+.cv-place { color: var(--muted); font-size: 0.9rem; }
+.cv-item-sub { display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; margin: 0.15rem 0 0.4rem; }
+.cv-role { color: var(--fg); font-weight: 600; }
+.cv-dates { color: var(--muted); font-size: 0.88rem; white-space: nowrap; }
+.cv-bullets { margin: 0.4rem 0 0; padding-left: 1.2rem; }
+.cv-bullets li { margin: 0.25rem 0; }
+
+.cv-skills { margin: 0; }
+.cv-skills dt { color: var(--fg-strong); font-weight: 600; margin-top: 0.6rem; }
+.cv-skills dd { margin: 0.15rem 0 0 0; color: var(--fg); }
+
+.cv-foot {
+  margin-top: 2.5rem; padding-top: 1.25rem; border-top: 1px solid var(--border);
+  text-align: center; color: var(--muted); font-size: 0.85rem;
+  text-transform: uppercase; letter-spacing: 0.08em;
 }
 
 /* ---- Footer ---- */
