@@ -5,15 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="color-scheme" content="light dark">
   <title>Piflarska liga calendar · Timur Kulenović</title>
-  <meta name="robots" content="noindex">
-  <meta name="description" content="Subscribable iCalendar feed for the Piflarska liga quiz schedule. Redirects to the live picker page.">
-  <link rel="canonical" href="https://kulenovic.si/piflarska-liga-calendar/">
+  <meta name="author" content="Timur Kulenović">
+  <meta name="description" content="Subscribable iCalendar feed for the Piflarska liga quiz schedule (season 7).">
+  <link rel="canonical" href="https://kulenovic.si/calendars/piflarska-liga-calendar/">
   <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
   <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
   <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
   <link rel="stylesheet" href="/css/style.css">
-  <meta http-equiv="refresh" content="0; url=https://kulenovic.si/piflarska-liga-calendar/">
+  <link rel="stylesheet" href="/css/picker.css">
 </head>
 <body>
   <header class="nav">
@@ -41,11 +41,35 @@
   <main>
     <div class="content">
       <div class="container">
-        <section class="center-card">
-          <h1>Piflarska liga calendar</h1>
-          <p>Redirecting to the live picker page…</p>
-          <p><a href="https://kulenovic.si/piflarska-liga-calendar/">kulenovic.si/piflarska-liga-calendar</a></p>
-        </section>
+        <div class="picker" style="--p-accent:#fbbf24; --p-accent2:#f59e0b;">
+          <h1><span class="grad">Piflarska liga</span></h1>
+  <p class="sub">Season 7 · subscribable calendar</p>
+  <p class="hint">Subscribe once and your calendar app pulls the schedule automatically. Pick <b>Google</b> or <b>Apple</b>, or <b>Copy</b> the URL for any other calendar app.</p>
+  <p class="hint"><b>Google not working?</b> Google’s one-click is flaky. If it says “unable to open calendar”, open Google Calendar → Settings → Add calendar → From URL → paste the copied <code>https://…/*.ics</code> link. That always works.</p>
+
+  <div class="subscribe">
+    <span class="label">All 8 events · one feed</span>
+    <a class="btn btn-sub" href="https://calendar.google.com/calendar/render?cid=webcal%3A%2F%2Fkulenovic.si%2Fpiflarska-liga-calendar%2Fics%2Fpiflarska-liga.ics" target="_blank" rel="noopener">Google</a>
+    <a class="btn btn-sub" href="webcal://kulenovic.si/piflarska-liga-calendar/ics/piflarska-liga.ics">Apple</a>
+    <button class="btn-sec" onclick="copy('https://kulenovic.si/piflarska-liga-calendar/ics/piflarska-liga.ics', this)">Copy</button>
+  </div>
+
+  <ul class="events">
+      <li><span class="date">Thursday, 10 September 2026</span><span class="what"><span class="num">1. KVIZ:</span> <span class="venue">Jazz Klub 300</span></span></li>
+      <li><span class="date">Monday, 21 September 2026</span><span class="what"><span class="num">2. KVIZ:</span> <span class="venue">BAZA</span></span></li>
+      <li><span class="date">Thursday, 8 October 2026</span><span class="what"><span class="num">3. KVIZ:</span> <span class="venue">WOOP! Arena</span></span></li>
+      <li><span class="date">Monday, 19 October 2026</span><span class="what"><span class="num">4. KVIZ:</span> <span class="venue">Nebotičnik</span></span></li>
+      <li><span class="date">Thursday, 5 November 2026</span><span class="what"><span class="num">5. KVIZ:</span> <span class="venue">Zorica</span></span></li>
+      <li><span class="date">Monday, 16 November 2026</span><span class="what"><span class="num">6. KVIZ:</span> <span class="venue">Bistro Švicarija</span></span></li>
+      <li><span class="date">Thursday, 3 December 2026</span><span class="what"><span class="num">7. KVIZ:</span> <span class="venue">Harat&#x27;s Pub</span></span></li>
+      <li><span class="date">Saturday, 19 December 2026</span><span class="what"><span class="finale">FINALE:</span> <span class="venue">Kazina Jazz Club</span></span></li>
+  </ul>
+
+  <p class="note">
+    Piflarska liga, season 7 ·
+    <a href="https://github.com/timurkulenovic/piflarska-liga-calendar" target="_blank" rel="noopener">source</a>
+  </p>
+        </div>
       </div>
     </div>
   </main>
@@ -53,7 +77,15 @@
   <footer class="footer">
     <div class="container">© 2026 Timur Kulenović</div>
   </footer>
-  <script>location.replace("https://kulenovic.si/piflarska-liga-calendar/");</script>
+
+  <script>
+function copy(url, btn) {
+    navigator.clipboard.writeText(url).then(() => {
+      const t = btn.textContent; btn.textContent = 'Copied!';
+      setTimeout(() => btn.textContent = t, 1200);
+    }).catch(() => alert(url));
+  }
+  </script>
   <script src="/js/main.js" defer></script>
 </body>
 </html>
