@@ -256,7 +256,7 @@ tbody tr:nth-child(even) { background: var(--accent-soft); }
   display: flex; align-items: center; gap: 1rem; padding: 0.9rem 0.25rem; color: var(--fg);
   transition: background var(--transition), transform var(--transition);
 }
-.entry:hover { background: var(--accent-soft); transform: translateX(2px); }
+.entry:hover { transform: translateX(2px); }
 .entry-icon { width: 48px; height: 48px; object-fit: contain; border-radius: 10px; flex: 0 0 auto; background: var(--bg-elev); padding: 4px; }
 .entry-text { display: flex; flex-direction: column; gap: 0.15rem; }
 .entry-title { color: var(--fg-strong); font-weight: 600; font-size: 1.05rem; }
