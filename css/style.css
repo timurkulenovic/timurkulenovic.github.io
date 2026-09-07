@@ -323,19 +323,19 @@ tbody tr:nth-child(even) { background: var(--accent-soft); }
 .cv { max-width: 760px; }
 .cv-head { text-align: center; margin-bottom: 2rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border); }
 .cv-head h1 { font-size: 2rem; margin: 0 0 0.25rem; }
-.cv-title { color: var(--accent); font-weight: 600; margin: 0 0 0.5rem; }
+.cv-title { color: var(--fg-strong); font-weight: 600; margin: 0 0 0.5rem; }
 .cv-loc { color: var(--muted); margin: 0 0 1rem; }
 .cv-contact { list-style: none; display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem 1.25rem; padding: 0; margin: 0; font-size: 0.9rem; color: var(--muted); }
 .cv-contact li { display: inline-flex; align-items: center; gap: 0.35rem; }
-.cv-contact a { color: var(--accent); }
+.cv-contact a { color: var(--fg-strong); }
 
 .cv-download {
   display: inline-flex; align-items: center; gap: 0.45rem; margin-top: 1.25rem;
-  padding: 9px 16px; border-radius: 8px; background: var(--accent); color: #00121f;
+  padding: 9px 16px; border-radius: 8px; background: #ffffff; color: #1a1a1a;
   font-weight: 600; font-size: 0.9rem; text-decoration: none;
   transition: background var(--transition), transform var(--transition);
 }
-.cv-download:hover { filter: brightness(1.08); color: #00121f; }
+.cv-download:hover { background: #e8e8e8; color: #1a1a1a; }
 .cv-download:active { transform: scale(0.97); }
 .cv-download svg { width: 17px; height: 17px; }
 
