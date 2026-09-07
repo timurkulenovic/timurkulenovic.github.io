@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light dark">
+  <title>Calendars · Timur Kulenović</title>
+  <meta name="author" content="Timur Kulenović">
+  <meta name="description" content="Subscribable iCalendar feeds generated from public sports schedules.">
+  <link rel="canonical" href="https://kulenovic.si/calendars/">
+  <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="container">
+      <a class="nav-brand" href="/">Timur Kulenović</a>
+      <nav>
+        <ul class="nav-links" data-nav-links>
+          <li><a class="nav-link" href="/projects/">Projects</a></li>
+          <li><a class="nav-link" href="/calendars/" aria-current="page">Calendars</a></li>
+          <li><a class="nav-link" href="/cv/">CV</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-btn" data-theme-toggle aria-label="Toggle color scheme" type="button">
+          <svg class="moon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+        </button>
+        <button class="icon-btn nav-toggle" data-nav-toggle aria-label="Toggle menu" aria-expanded="false" type="button">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="content">
+      <div class="container page">
+        <article class="prose">
+          <header>
+            <h1 class="page-title">Calendars</h1>
+          </header>
+          <p>Subscribable iCalendar feeds generated from public sports schedules. Subscribe in Apple Calendar, Google Calendar, or Outlook — your client pulls updates automatically.</p>
+
+          <h2 id="aba-liga">
+            ABA Liga
+            <a class="heading-link" href="#aba-liga" aria-label="Link to heading">#</a>
+          </h2>
+          <p>Match dates scraped from the <a href="https://www.aba-liga.com/calendar/26/1/">ABA Liga calendar</a> and published as per-team <code>.ics</code> feeds. A GitHub Action refreshes the source daily, so subscribers always see the latest schedule.</p>
+          <ul>
+            <li><strong>Picker page:</strong> <a href="https://timurkulenovic.github.io/aba-league-calendar/">kulenovic.si/aba-league-calendar</a></li>
+            <li><strong>All matches:</strong> <code>webcal://timurkulenovic.github.io/aba-league-calendar/ics/all.ics</code></li>
+            <li><strong>Per team:</strong> <code>webcal://timurkulenovic.github.io/aba-league-calendar/ics/&lt;team-slug&gt;.ics</code>
+              <ul>
+                <li><code>cedevita-olimpija.ics</code></li>
+                <li><code>perspektiva-ilirija.ics</code></li>
+                <li><code>partizan-mozzart-bet.ics</code></li>
+              </ul>
+            </li>
+            <li><strong>Source:</strong> <a href="https://github.com/timurkulenovic/aba-league-calendar">github.com/timurkulenovic/aba-league-calendar</a></li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      © 2026 Timur Kulenović
+    </div>
+  </footer>
+
+  <script src="/js/main.js" defer></script>
+</body>
+</html>

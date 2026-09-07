@@ -1,0 +1,19 @@
+{
+  "name": "Timur Kulenović",
+  "short_name": "Timur K.",
+  "icons": [
+    {
+      "src": "/images/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#2bb3a3",
+  "background_color": "#212121",
+  "display": "standalone"
+}
