@@ -297,6 +297,10 @@ tbody tr:nth-child(even) { background: var(--accent-soft); }
 .cal-btn:active { transform: scale(0.97); }
 .cal-btn-primary { background: var(--accent); color: #00121f; }
 .cal-btn-primary:hover { background: var(--accent-strong); }
+.cal-btn-google { background: #ffffff; color: #1a1a1a; }
+.cal-btn-google:hover { background: #e8e8e8; color: #1a1a1a; }
+.cal-btn-apple { background: #3b82f6; color: #fff; }
+.cal-btn-apple:hover { background: #2563eb; color: #fff; }
 .cal-btn-secondary { background: var(--bg-elev); color: var(--fg); border: 1px solid var(--border); }
 .cal-btn-secondary:hover { background: var(--accent-soft); color: var(--accent); }
 a.cal-btn-primary:hover { color: #00121f; }
